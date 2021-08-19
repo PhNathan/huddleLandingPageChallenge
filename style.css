@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    font-family: 'Poppins', sans-serif;
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+}
+
+header .logo img{
+    width: 200px;
+}
+.container{
+    display: flex;
+    justify-content: flex-start;
+    width: 1440px;
+}
+
+body{
+    background-image: url("images/bg-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+}
+
+#intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    margin-left: 40px;
+}
+.cta h1{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 40px;
+    font-weight: 400px;
+   
+}
+
+.cta p{
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 13px;
+    line-height: 25px;
+ 
+}
+
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cta a{
+    display: block;
+    margin-top: 20px;
+    background-color: white;
+    padding: 15px;
+    width:150px;
+    text-decoration: none;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: hsl(257, 40%, 49%);
+    border: 1px solid hsl(257, 40%, 49%);
+    box-shadow: 0px 0px 5px black;
+}
+
+.cta a:hover{
+    transition: all 0.5s linear;
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+
+#social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media a{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+    color: white;
+   
+}
+
+.social-media a:hover{
+    transition: all 0.5s linear;
+    border: 1px solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+    
+}
+
+footer{
+    display: flex;
+   
+
+}
+
+.copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.attribution{
+    color: white;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: hsl(300, 69%, 71%);
+}
+
+
+
+@media (max-width: 1000px){
+    .cta{
+        margin-left: 20px;
+        
+    }
+    
+    .mockups img{
+        width: 500px;
+    }
+
+    .social-media{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 375px) {
+    #info{
+        margin-top: 20px;
+    }   
+    
+    .container{
+            flex-direction: column;
+        }
+
+        .mockups{
+            display: flex;
+            justify-content: center;
+        }
+
+        .mockups img{
+            width: 300px;
+        }
+
+
+        .cta{
+         margin: 0;
+        }
+
+        .cta h1{
+            margin-top: 20px ;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .cta p{
+            text-align: center;
+        }
+
+        .btn{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        #social{
+            margin-top: 50px;
+        }
+
+        .social-media{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .social-media a{
+            padding: 8px;
+            font-size: 15px;
+           
+        }
+
+        footer{
+           margin-top: 30px;
+           
+        }
+}
